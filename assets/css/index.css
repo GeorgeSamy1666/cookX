@@ -37,11 +37,32 @@ nav .logo-link {
 nav .logo {
     font-family: "Creepster", system-ui;
     font-size: 20px;
+    
 }
 
 nav .logo span {
     color: #DC2626;
     font-size: 24px;
+    display: inline-block;
+    animation: pluse 2s infinite linear;
+    transform: rotate(-10deg);
+}
+@keyframes pluse {
+    0%{
+        transform: scale(1) rotate(-10deg);
+    }
+    25%{
+        transform: scale(1.2) rotate(-5deg);
+    }
+    50%{
+        transform: scale(1.3) rotate(0deg);
+    }
+    75%{
+        transform: scale(1.2) rotate(-5deg);
+    }
+    100%{
+        transform: scale(1)rotate(-10deg);
+    }
 }
 
 nav .logo-icon {
@@ -61,6 +82,27 @@ nav .logo-icon img {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    animation: rotate 2s infinite linear;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    75% {
+        transform: rotate(270deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 nav .links ul {
@@ -170,10 +212,16 @@ nav .button a:hover {
     border-radius: 5px;
     transition: all 0.2s ease-in-out;
 }
+.sec1 .button a:hover{
+    background-color: rgb(185, 28, 28);
+}
 .sec1 .button a:last-child{
     background-color: rgba(131, 134, 136,0.1);
     backdrop-filter: blur(5px);
     border: 1.5px solid #838688;
+}
+.sec1 .button a:last-child:hover{
+    border-color: #fff;
 }
 .sec1 .scroll-botton {
     position: absolute;
@@ -182,8 +230,9 @@ nav .button a:hover {
     right: 50%;
     transform: translateX(50%);
     cursor: pointer;
-    animation: down 1.5s infinite;
+    animation: down 1.5s infinite linear;
     transition: all 0.2s ease-in-out;
+    
     
 }
 .sec1 .scroll-botton i{
@@ -200,3 +249,4 @@ nav .button a:hover {
     transform: translate(0,0);
 }
 }
+
