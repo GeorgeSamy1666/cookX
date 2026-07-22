@@ -143,6 +143,8 @@ nav .button a:hover {
     background-color: rgb(185, 28, 28);
 }
 
+/* nav end */
+
 .sec1 {
     position: relative;
     width: 100%;
@@ -249,4 +251,5 @@ nav .button a:hover {
     transform: translate(0,0);
 }
 }
+/* sec1 end */
 
