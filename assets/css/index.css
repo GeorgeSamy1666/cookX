@@ -228,7 +228,7 @@ nav .button a:hover {
 }
 .sec1 .scroll-botton {
     position: absolute;
-    bottom: 15px;
+    bottom: 30px;
     color:#a1a3a4;
     right: 50%;
     transform: translateX(50%);
@@ -239,7 +239,7 @@ nav .button a:hover {
     
 }
 .sec1 .scroll-botton i{
-    font-size: 20px;
+    font-size: 30px;
 }
 @keyframes down {
 0%{

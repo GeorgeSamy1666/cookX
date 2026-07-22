@@ -51,14 +51,14 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const imagesData = [
-    { src: "image gallery/Elegant dining.jpg", title: "Elegant dining room" },
-    { src: "image gallery/Pasta.jpg", title: "Fresh pasta dish" },
-    { src: "image gallery/Italian Wine.jpg", title: "Italian wine selection" },
-    { src: "image gallery/Resturant In.jpg", title: "Restaurant interior" },
-    { src: "image gallery/Risto.jpg", title: "Signature risotto" },
-    { src: "image gallery/cozy bar.jpg", title: "Cozy bar area" },
-    { src: "image gallery/Steak.jpg", title: "Tiramisu dessert" },
-    { src: "image gallery/coaktails.jpg", title: "Cocktails" },
+    { src: "assets/images/Elegant dining.jpg", title: "Elegant dining room" },
+    { src: "assets/images/Pasta.jpg", title: "Fresh pasta dish" },
+    { src: "assets/images/Italian Wine.jpg", title: "Italian wine selection" },
+    { src: "assets/images/Resturant In.jpg", title: "Restaurant interior" },
+    { src: "assets/images/Risto.jpg", title: "Signature risotto" },
+    { src: "assets/images/cozy bar.jpg", title: "Cozy bar area" },
+    { src: "assets/images/Steak.jpg", title: "Tiramisu dessert" },
+    { src: "assets/images/coaktails.jpg", title: "Cocktails" },
 ];
 
 
