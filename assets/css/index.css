@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #DC2626 #333;
+}
+
+body {
+    margin-top: 60px;
+    height: 200vh;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 999999;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(15px);
+}
+
+nav .logo-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav .logo {
+    font-family: "Creepster", system-ui;
+    font-size: 20px;
+}
+
+nav .logo span {
+    color: #DC2626;
+    font-size: 24px;
+}
+
+nav .logo-icon {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(248, 114, 114, 0.2);
+    padding: 7px;
+    border-radius: 10px;
+
+}
+
+nav .logo-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+nav .links ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav .links,
+nav .button {
+    font-family: "Outfit", sans-serif;
+}
+
+nav .links a {
+    text-decoration: none;
+    color: #e5e7eb;
+    font-size: 10px;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+nav .links a:hover {
+    color: rgb(240, 110, 110);
+}
+
+nav .button a {
+    font-size: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #DC2626;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+nav .button a:hover {
+    background-color: rgb(185, 28, 28);
+}
+
+.sec1 {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.sec1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/home.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(45%);
+    z-index: -5;
+}
+
+.sec1 .welcome {
+    color: #F07170;
+    font-family: "Outfit", sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.sec1 h1 {
+    color: #fff;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+
+}
+
+.sec1 p {
+    color: #e5e7eb;
+    font-size: 14px;
+    font-weight: 400;
+     font-family: "SN Pro", sans-serif;
+}
+.sec1 p span{
+    display: block;
+}
+.sec1 .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+}
+.sec1 .button a {
+    font-size: 10px;
+    font-family: "Outfit", sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background-color: #DC2626;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+.sec1 .button a:last-child{
+    background-color: rgba(131, 134, 136,0.1);
+    backdrop-filter: blur(5px);
+    border: 1.5px solid #838688;
+}
+.sec1 .scroll-botton {
+    position: absolute;
+    bottom: 15px;
+    color:#a1a3a4;
+    right: 50%;
+    transform: translateX(50%);
+    cursor: pointer;
+    animation: down 1.5s infinite;
+    transition: all 0.2s ease-in-out;
+    
+}
+.sec1 .scroll-botton i{
+    font-size: 20px;
+}
+@keyframes down {
+0%{
+    transform: translate(0,0);
+}
+50%{
+    transform: translate(0,10px);
+}
+100%{
+    transform: translate(0,0);
+}
+}
