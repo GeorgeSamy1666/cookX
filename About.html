@@ -40,7 +40,7 @@
 <body>
     <nav>
         <div class="nav-bar">
-            <a class="logo-link" href="#home">
+            <a class="logo-link" href="index.html">
                 <div class="logo-icon">
                     <img src="assets/images/chef.png" alt="logo-icon">
                 </div>
@@ -49,7 +49,8 @@
                 </span>
             </a>
         </div>
-        <div class="links">
+
+        <div class="links" id="nav-links">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#menu">Menu</a></li>
@@ -57,10 +58,19 @@
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+
+            <div class="mobile-button">
+                <a href="#">Reserve a Table</a>
+            </div>
         </div>
+
         <div class="button">
             <a href="#">Reserve a Table</a>
         </div>
+
+        <button class="burger-menu" id="burger-menu" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
     </nav>
     <section class="about-hero">
         <div class="overlay"></div>

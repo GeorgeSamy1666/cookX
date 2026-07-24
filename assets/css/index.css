@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -21,10 +22,29 @@ nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 1rem 2rem;
-    background-color: rgba(0, 0, 0, 0.85);
-    backdrop-filter: blur(15px);
+    padding: 1rem 3rem;
+    background-color: #000;
 }
+
+nav .mobile-header,
+nav .mobile-button,
+nav .burger-menu {
+    display: none;
+}
+
+nav .burger-menu {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 26px;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+
 
 nav .logo-link {
     display: flex;
@@ -41,7 +61,7 @@ nav .logo {
 }
 
 nav .logo span {
-    color: #DC2626;
+    color:#f86e68;
     font-size: 40px;
     display: inline-block;
     animation: pluse 2s infinite linear;
@@ -277,34 +297,32 @@ nav .button a:hover {
 .sec2 {
     position: relative;
     width: 100%;
+    overflow: hidden;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    padding: 50px;
+    gap: 70px;
+    padding: 70px;
     background-color: #030712;
-    height: 80vh;
+    box-sizing: border-box;
 }
 
 .sec2 .image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
-    width: 600px;
-    height: 450px;
-    z-index: 1;
+    width: 700px;
+    height: 100%;
+    z-index: 1
 }
 
 .sec2 .image span {
     position: absolute;
-    background-color: #280e16;
+    background-color: #2e0d15;
     width: 100%;
     height: 100%;
     border-radius: 20px;
-    top: 55%;
-    left: 55%;
-    transform: translate(-50%, -50%);
+    top: 25px;
+    left: 25px;
     z-index: -1;
 }
 
@@ -312,23 +330,26 @@ nav .button a:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     border-radius: 20px;
 }
 
 .sec2 .content {
-    width: 45%;
+    max-width: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 10px;
+    gap: 16px;
 }
 
 .sec2 .content .welcome {
     color: #f86e68;
-    font-size: 20px;
+    font-size: 13px;
     font-family: "Outfit", sans-serif;
-    font-weight: 500;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .sec2 .content h1 {
@@ -336,6 +357,7 @@ nav .button a:hover {
     font-size: 50px;
     font-family: "Playfair Display", serif;
     font-weight: 700;
+    line-height: 1.15;
 }
 
 .sec2 .content h1 span {
@@ -344,39 +366,289 @@ nav .button a:hover {
 }
 
 .sec2 .content p {
-    color: #9ca3af;
-    font-size: 18px;
-    font-family: "Outfit", sans-serif;
-    font-weight: 300;
-    letter-spacing: 1.5;
+ color: #9ca3af;
+  font-size: 19px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  margin: 0;
 }
-.sec2 .content .p{
-    border-bottom: #333 1px solid;
-    padding-bottom: 30px;
-   
+
+.sec2 .content .p {
+    border-bottom: #1f2937 1px solid;
+    padding-bottom: 50px;
+
 }
-.sec2 .content .number{
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: center;
-   justify-content: space-between;
-   width:100%
+
+.sec2 .content .number {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 70px;
 }
-.sec2 .content .number .number-card{
+
+.sec2 .content .number .number-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
     padding-top: 20px;
 }
-.sec2 .content .number .number-card h3{
+
+.sec2 .content .number .number-card h3 {
     color: #f87171;
     font-size: 30px;
 }
-.sec2 .content .number .number-card  p{
+
+.sec2 .content .number .number-card p {
     font-size: 14px;
     font-weight: 300;
+}/* Media Queries for Tablet & Mobile */
+@media (max-width: 992px) {
+    nav {
+        justify-content: space-between;
+        padding: 1rem 1.5rem;
+    }
+
+    nav .burger-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav .links {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #060911;
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+        padding: 24px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.9);
+    }
+
+    nav .links.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    nav .links ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.2rem;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    nav .links ul li {
+        width: 100%;
+    }
+
+    nav .links ul li a {
+        font-size: 17px;
+        font-weight: 500;
+        color: #ffffff;
+        display: block;
+        padding: 4px 0;
+        text-align: left;
+        transition: color 0.2s ease;
+    }
+
+    nav .links ul li a:hover {
+        color: #f86e68;
+    }
+
+
+    nav .button {
+        display: none;
+    }
+
+    nav .mobile-button {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    nav .mobile-button a {
+        display: block;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 600;
+        font-family: "Outfit", sans-serif;
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #DC2626;
+        padding: 14px 20px;
+        border-radius: 10px;
+        text-align: center;
+        transition: background-color 0.2s ease;
+    }
+    nav .mobile-button a:hover {
+        background-color: #b91c1c;
+        color: #ffffff;
+    }
+    
+
+    .sec1 h1 {
+        font-size: 48px;
+    }
+
+    .sec1 p {
+        font-size: 18px;
+        padding: 0 20px;
+    }
+
+    .sec2 {
+        padding: 50px 20px;
+        gap: 40px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sec2 .image {
+        width: calc(100% - 25px);
+        max-width: 100%;
+        height: 350px;
+        margin-bottom: 25px;
+    }
+
+    .sec2 .content {
+        max-width: 100%;
+        width: 100%;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .sec2 .content h1 {
+        font-size: 34px;
+    }
+
+    .sec2 .content h1 span{
+        display: inline;
+    }
+    .sec2 .content p {
+        font-size: 17px;
+    }
+
+    .sec2 .content .number {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .sec2 .content .number .number-card {
+        padding-top: 0;
+        flex: 1;
+        text-align: center;
+    }
+
+    .sec2 .content .number .number-card h3 {
+        font-size: 28px;
+    }
+
+    .sec2 .content .number .number-card p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 576px) {
+    nav {
+        padding: 1rem 1rem;
+    }
+
+    nav .logo {
+        font-size: 26px;
+    }
+
+    nav .logo span {
+        font-size: 32px;
+    }
+
+    nav .logo-icon {
+        width: 40px;
+        height: 40px;
+        padding: 6px;
+    }
+
+    .sec1 {
+        padding: 0 15px;
+    }
+
+    .sec1 .welcome {
+        font-size: 16px;
+    }
+
+    .sec1 h1 {
+        font-size: 32px;
+        letter-spacing: 1px;
+    }
+
+    .sec1 p {
+        font-size: 15px;
+    }
+
+    .sec1 .button {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .sec1 .button a {
+        width: 100%;
+        text-align: center;
+        padding: 14px 20px;
+        font-size: 16px;
+    }
+
+    .sec2 {
+        padding: 40px 16px;
+        gap: 30px;
+    }
+
+    .sec2 .image {
+        height: 250px;
+    }
+
+    .sec2 .image span {
+        top: 12px;
+        left: 12px;
+    }
+
+    .sec2 .content h1 {
+        font-size: 28px;
+    }
+
+    .sec2 .content p {
+        font-size: 15px;
+    }
+
+    .sec2 .content .number {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .sec2 .content .number .number-card h3 {
+        font-size: 24px;
+    }
+
+    .sec2 .content .number .number-card p {
+        font-size: 12px;
+    }
 }
 /* sec2 end */

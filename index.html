@@ -35,7 +35,7 @@
 <body>
     <nav>
         <div class="nav-bar">
-            <a class="logo-link" href="#home">
+            <a class="logo-link" href="index.html">
                 <div class="logo-icon">
                     <img src="assets/images/chef.png" alt="logo-icon">
                 </div>
@@ -44,7 +44,8 @@
                 </span>
             </a>
         </div>
-        <div class="links">
+
+        <div class="links" id="nav-links">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#menu">Menu</a></li>
@@ -52,10 +53,19 @@
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+
+            <div class="mobile-button">
+                <a href="#">Reserve a Table</a>
+            </div>
         </div>
+
         <div class="button">
             <a href="#">Reserve a Table</a>
         </div>
+
+        <button class="burger-menu" id="burger-menu" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
     </nav>
     <div class="sec1">
         <p class="welcome">Welcome to Cook X</p>
@@ -91,29 +101,27 @@
                 through
                 generations while embracing modern culinary techniques.</p>
 
-                <div class="number">
+            <div class="number">
 
-                    <div class="number-card">
-                        <h3>40+</h3>
-                        <p>Years of Excellence</p>
-                    </div>
-
-                    <div class="number-card">
-                        <h3>50K+</h3>
-                        <p>Happy Guests</p>
-                    </div>
-
-                    <div class="number-card">
-                        <h3>4.9</h3>
-                        <p>Star Rating</p>
-                    </div>
+                <div class="number-card">
+                    <h3>40+</h3>
+                    <p>Years of Excellence</p>
                 </div>
 
+                <div class="number-card">
+                    <h3>50K+</h3>
+                    <p>Happy Guests</p>
+                </div>
+
+                <div class="number-card">
+                    <h3>4.9</h3>
+                    <p>Star Rating</p>
+                </div>
+            </div>
+
         </div>
-
-
-
     </div>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
