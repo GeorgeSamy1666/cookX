@@ -255,6 +255,12 @@
             color: #FFB900;
         }
         
+        @media (max-width:767px) {
+            
+                .cards{
+                        grid-template-columns: 1fr ;
+                }
+        }
         @media (max-width:992px) {
             .final-card {
                 padding: 8%;
@@ -262,6 +268,9 @@
             main>div {
                 padding: 5% 0 15%;
             }
+                .cards{
+                        grid-template-columns: 1fr 1fr;
+                }
         }
         
         @media (min-width:1400px) {
