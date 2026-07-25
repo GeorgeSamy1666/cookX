@@ -1,0 +1,277 @@
+        /* starting of section */
+        
+        .gallery-hero {
+            display: grid;
+            place-items: center;
+        }
+        
+        @media screen and (min-width:992px) {
+            .gallery-hero {
+                height: 25rem;
+            }
+        }
+        
+        @media screen and (max-width:992px) {
+            .gallery-hero {
+                height: 48rem;
+            }
+        }
+        /* sec-nav starting */
+        
+        .container {
+            padding: 3% 10%;
+            margin-bottom: -20px;
+        }
+        
+        .sec-nav {
+            border-bottom: .5px solid rgb(162, 161, 161);
+            font-size: large;
+        }
+        
+        ul.sec-nav {
+            padding-left: 3rem;
+        }
+        
+        .sec-nav li a {
+            font-size: smaller;
+            transition-duration: .2s;
+            font-family: "Outfit", sans-serif;
+            font-weight: 500;
+            margin-right: 5px;
+        }
+        
+        .sec-nav li a:hover {
+            color: rgb(240, 110, 110)!important;
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .nav {
+            top: 80px;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            z-index: 999999;
+            background-color: #030712;
+            backdrop-filter: blur(15px);
+            position: sticky;
+            z-index: 2;
+        }
+        /* starting of main */
+        
+        main {
+            background-color: #030712;
+            padding: 5% 10%;
+        }
+        
+        main h4 {
+            font-family: "Outfit", sans-serif;
+            padding: 3% 0 1%
+        }
+        
+        main h4+p {
+            color: rgba(223, 222, 222, 0.988);
+        }
+        
+        main .container {
+            display: grid;
+            place-items: center;
+            padding: 0;
+        }
+        
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+            width: 80vw;
+            place-items: center;
+        }
+        
+        main>div:not(:last-of-type) {
+            border-bottom: 1px solid gray;
+            padding-bottom: 5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .cards .card {
+            background: #171d26;
+            border: 1px solid #2a3340;
+            border-radius: 18px;
+            padding: 1rem;
+            transition: .35s;
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            flex-direction: row;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .card:hover {
+            border-color: #d44;
+            transform: translateY(-4px);
+        }
+        
+        .cards .card .text {
+            width: 75%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        
+        .cards .card .text h6,
+        .container div h4,
+        .container div h2 {
+            color: #f5ede3;
+            font-size: 1.55rem;
+            font-family: serif;
+            margin-bottom: .8rem;
+        }
+        
+        .cards .card .text p {
+            color: #b8b8b8;
+            line-height: 1.8;
+            font-size: small;
+            margin-bottom: 1rem;
+        }
+        
+        .cards .card .price {
+            color: #ff5b43;
+            font-size: 2rem;
+            font-weight: 700;
+            text-align: right;
+            min-width: 80px;
+            height: 100%;
+        }
+        
+        .cards .card .badges div {
+            border-radius: 10px;
+            font-size: .8rem;
+            font-weight: 600;
+            width: 5%!important;
+            padding: 2%!important;
+            height: 3%;
+        }
+        
+        .cards .card .badges .green-badge {
+            background-color: #0E3629;
+            color: #05DF72;
+            transition-duration: .3s;
+        }
+        
+        .cards .card .badges .green-badge:hover {
+            border: #05DF72 1px solid;
+            cursor: pointer;
+        }
+        
+        .cards .card .badges .yellow-badge {
+            background-color: #452516;
+            color: #FFB900;
+        }
+        
+        .cards .card .badges .yellow-badge:hover {
+            border: #FFB900 1px solid;
+            cursor: pointer;
+        }
+        
+        .card:hover .price {
+            color: #ff3b30;
+        }
+        
+        .cards .card:first-child {
+            position: relative;
+        }
+        
+        .cards .card:first-child::after {
+            position: absolute;
+            right: 0;
+            top: -5%;
+            background-color: #DC2626;
+            color: white;
+            border-radius: inherit;
+            content: "Chef's Pic";
+            font-size: small;
+            padding: 1% 2.5%;
+        }
+        
+        .final-cards {
+            color: #9CA3AF;
+            width: 80vw;
+            margin: 5rem 0;
+        }
+        
+        .final-cards .final-card {
+            background-color: #030712;
+            margin: auto;
+            width: 80vw;
+            padding: 4%;
+        }
+        
+        .final-cards .final-card::after {
+            display: none;
+        }
+        
+        .final-cards .final-card h3 {
+            margin: 3% 0;
+        }
+        
+        footer {
+            display: grid;
+            place-items: center;
+            padding: 10%;
+        }
+        
+        .foot-icons {
+            width: 70%;
+            color: #9CA3AF;
+        }
+        
+        .foot-icons .check {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background-color: #1F2937;
+            margin: 0 5px;
+            color: #a0a0a5;
+            padding: 2px;
+        }
+        
+        .foot-icons .green-check {
+            background-color: #0E3629;
+            color: #05DF72;
+        }
+        
+        .foot-icons .yellow-check {
+            background-color: #452516;
+            color: #FFB900;
+        }
+        
+        @media (max-width:992px) {
+            .final-card {
+                padding: 8%;
+            }
+            main>div {
+                padding: 5% 0 15%;
+            }
+        }
+        
+        @media (min-width:1400px) {
+            .cards {
+                padding: 0 0;
+            }
+            .gallery-hero {
+                height: 50rem;
+            }
+            body p {
+                font-size: 1rem!important;
+            }
+        }
