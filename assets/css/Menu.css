@@ -1,8 +1,8 @@
         /* starting of section */
-        
+      
         .gallery-hero {
-            display: grid;
-            place-items: center;
+            display: flex;
+            align-items: center;
         }
         
         @media screen and (min-width:992px) {
@@ -12,16 +12,13 @@
         }
         
         @media screen and (max-width:992px) {
-            .gallery-hero {
-                height: 48rem;
+            .gallery-hero h1 {
+                font-size: xx-large;
             }
         }
         /* sec-nav starting */
         
-        .container {
-            padding: 3% 10%;
-            margin-bottom: -20px;
-        }
+      
         
         .sec-nav {
             border-bottom: .5px solid rgb(162, 161, 161);
