@@ -266,13 +266,13 @@
                 .cards{
                         grid-template-columns: 1fr 1fr;
                 }
-        }
-        @media (max-width:767px) {
+        }@media (max-width:767px) {
             
                 .cards{
                         grid-template-columns: 1fr ;
                 }
         }
+        
         @media (min-width:1400px) {
             .cards {
                 padding: 0 0;
