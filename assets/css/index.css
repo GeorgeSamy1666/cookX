@@ -296,20 +296,29 @@ nav .button a:hover {
 .sec2 {
     position: relative;
     width: 100%;
-    overflow: hidden;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 70px;
     padding: 70px;
+    background-color: #030712;
+    box-sizing: border-box;
+}
+
+.sec2 .container {
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0 50px 0;
     background-color: #030712;
     box-sizing: border-box;
 }
 
 .sec2 .image {
     position: relative;
-    width: 700px;
+    max-width: 760px;
     height: 100%;
     z-index: 1
 }
@@ -334,7 +343,7 @@ nav .button a:hover {
 }
 
 .sec2 .content {
-    max-width: 700px;
+    max-width: 760px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -366,9 +375,9 @@ nav .button a:hover {
 
 .sec2 .content p {
     color: #9ca3af;
-    font-size: 19px;
+    font-size: 21px;
     font-family: "Outfit", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.6;
     margin: 0;
 }
@@ -426,6 +435,17 @@ nav .button a:hover {
     box-sizing: border-box;
 }
 
+.sec3 .container {
+    position: relative;
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
 .sec3 .head {
     display: flex;
     flex-direction: column;
@@ -466,9 +486,11 @@ nav .button a:hover {
 
 .sec3 .menu-card {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 420px));
+    grid-template-columns: repeat(4, minmax(0, 380px));
     grid-template-rows: 1fr;
-    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
     width: 100%;
 }
 
@@ -479,7 +501,7 @@ nav .button a:hover {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     background-color: #1f2937;
     border-radius: 20px;
     overflow: hidden;
@@ -489,7 +511,7 @@ nav .button a:hover {
 
 .sec3 .menu-card .card .image {
     width: 100%;
-    height: 420px;
+    height: 300px;
     object-fit: cover;
     object-position: center;
     border-top-right-radius: 20px;
@@ -500,7 +522,7 @@ nav .button a:hover {
 
 .sec3 .menu-card .card .image img {
     width: 100%;
-    height: 420px;
+    height: 300px;
     object-fit: cover;
     object-position: center;
     transition: transform 0.3s ease-in-out;
@@ -568,7 +590,7 @@ nav .button a:hover {
 .sec3 .card-info div span {
     color: #f87169;
     font-size: 20px;
-     font-family: "Outfit", sans-serif;
+    font-family: "Outfit", sans-serif;
     font-weight: 700;
     transition: all 0.3s ease-in-out;
 }
@@ -620,7 +642,7 @@ nav .button a:hover {
 
 .sec3 .button a,
 .sec3 .button i {
-    
+
     color: #f87169;
     transition: all 0.3s ease-in-out;
 }
@@ -629,11 +651,760 @@ nav .button a:hover {
     color: #fca59d;
 }
 
+/* sec3 end */
+
+.sec4 {
+    background-color: #030712;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+.sec4 .container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 1600px;
+}
+
+.sec4 .head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.sec4 .head p {
+    color: #f86e68;
+    font-size: 20px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+    margin: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.sec4 .head h2 {
+    color: #ffffff;
+    font-size: 35px;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+}
+
+.sec4 .cards {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 500px));
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    ;
+}
+
+.sec4 .cards .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    transition: all 0.3s ease-in-out;
+    background-color: #111827;
+    color: #fff;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    min-height: 250px;
+    height: auto;
+}
+
+.sec4 .cards .card .quote {
+    position: absolute;
+    color: #481b22;
+    top: 20px;
+    right: 20px;
+    font-size: 60px;
+    transition: all 0.3s ease-in-out;
+}
+
+.sec4 .cards .card .stars {
+    color: #ffb900;
+}
+
+.sec4 .cards .card p {
+    color: #d1d5db;
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    margin: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.sec4 .cards .card .name {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.sec4 .cards .card .name span {
+    color: #fca5a5;
+    background-color: #481b22;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.sec4 .cards .card .name p {
+    color: #6b7280;
+}
+
+
+/* sec4 end */
+/* sec5 start */
+
+.sec5 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:
+        linear-gradient(90deg, #111827, #111827, rgba(17, 24, 39, 0.913)),
+        url("../images/form-bg.jpeg") no-repeat center center / cover;
+}
+
+.sec5 .container {
+    gap: 20px;
+    position: relative;
+    width: 100%;
+    max-width: 1600px;
+    padding: 100px 0 100px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sec5 .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.sec5 .left h2 {
+    color: #ffffff;
+    font-size: 50px;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+}
+
+.sec5 .left p {
+
+    color: #d1d5db;
+    font-size: 24px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.sec5 .left .book {
+    color: #f87171;
+    font-size: 18px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+
+}
+
+.sec5 .left .number {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.sec5 .left .number p {
+    color: #9ca3af;
+    font-size: 20px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.sec5 .left .number a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+    transition: all 0.3s ease-in-out;
+}
+
+.sec5 .left .number a:hover {
+    color: #f87171;
+}
+
+.sec5 .left .number a i {
+    margin-right: 10px;
+    color: #f87171;
+}
+
+.sec5 .right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.sec5 .right form {
+    background-color: #1f2937;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.sec5 .right form .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.sec5 .right form .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+}
+
+.sec5 .right form .column label {
+    color: #d1d5db;
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.sec5 .right form .column input,
+.sec5 .right form .column textarea {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #374151;
+    color: #9ca3af;
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    width: 310px;
+    max-width: 100%;
+    border: 1px solid #4b5563;
+}
+
+
+.sec5 .right form .column textarea {
+    width: 650px;
+    max-width: 100%;
+    resize: none;
+}
+
+.sec5 .right form .column select {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #374151;
+    color: #9ca3af;
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    width: 310px;
+    max-width: 100%;
+}
+
+.sec5 .right form button {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #dc2626;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.sec5 .right form button:hover {
+    background-color: #b91c1c;
+    box-shadow: 0 2px 15px #b91c1c;
+}
+
+.sec5 .right form p:last-child {
+    color: #9ca3af;
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+/* sec6 start */
+.sec6 {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 70px;
+    background-color: #030712;
+    box-sizing: border-box;
+}
+
+.sec6 .container {
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.sec6 .head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+}
+
+.sec6 .head p {
+    color: #f86e68;
+    font-size: 13px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.sec6 .head h2 {
+    color: #ffffff;
+    font-size: 46px;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    margin: 0;
+}
+
+.sec6 .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.sec6 .gallery-card {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sec6 .gallery-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(248, 110, 104, 0.2);
+}
+
+.sec6 .gallery-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease;
+}
+
+.sec6 .gallery-card:hover img {
+    transform: scale(1.08);
+}
+
+.sec6 .gallery-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.3) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.sec6 .gallery-card:hover .overlay {
+    opacity: 1;
+}
+
+.sec6 .gallery-card .zoom-icon {
+    align-self: flex-end;
+    background-color: #ffffff;
+    color: #111111;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease;
+}
+
+.sec6 .gallery-card:hover .zoom-icon {
+    transform: scale(1.08);
+}
+
+.sec6 .gallery-card .zoom-icon i {
+    font-size: 15px;
+    color: #111111;
+}
+
+.sec6 .gallery-card .overlay-info {
+    text-align: left;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.sec6 .gallery-card .overlay-info h4 {
+    color: #ffffff;
+    font-family: "Outfit", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.sec6 .gallery-card .overlay-info p {
+    color: #d1d5db;
+    font-family: "Outfit", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+    opacity: 0.85;
+}
+/* sec6 end */
+
+/* Gallery Carousel Modal - Fullscreen Coverflow Style */
+.index-gallery-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999999;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.index-gallery-modal.active {
+    display: flex;
+}
+
+.modal-backdrop-custom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(3, 7, 18, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+.modal-close-circle {
+    position: fixed;
+    top: 25px;
+    right: 30px;
+    z-index: 10000000;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.modal-close-circle:hover {
+    background: rgba(220, 38, 38, 0.9);
+    border-color: #dc2626;
+    transform: scale(1.1);
+}
+
+.carousel-side-btn {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000000;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.carousel-side-btn:hover {
+    background: rgba(220, 38, 38, 0.9);
+    border-color: #dc2626;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-side-btn.prev-btn {
+    left: 30px;
+}
+
+.carousel-side-btn.next-btn {
+    right: 30px;
+}
+
+.carousel-coverflow-wrapper {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1400px;
+    height: 80vh;
+    padding: 0 80px;
+    gap: 30px;
+}
+
+/* Side Peek Cards */
+.carousel-peek-card {
+    flex: 0 0 24%;
+    max-width: 320px;
+    height: 58vh;
+    border-radius: 16px;
+    overflow: hidden;
+    opacity: 0.22;
+    filter: brightness(0.35) blur(1px);
+    transform: scale(0.85);
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-peek-card:hover {
+    opacity: 0.45;
+    filter: brightness(0.6);
+    transform: scale(0.9);
+}
+
+.carousel-peek-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Main Active Card */
+.carousel-main-card {
+    flex: 0 0 52%;
+    max-width: 680px;
+    height: 74vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: all 0.4s ease-in-out;
+}
+
+.carousel-main-card img {
+    width: 100%;
+    height: calc(100% - 40px);
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transition: opacity 0.25s ease;
+}
+
+.modal-caption-text {
+    color: #ffffff;
+    font-family: "Outfit", sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    margin-top: 16px;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
 
 
 
 
-/* Media Queries for Tablet & Mobile */
+
+@media (max-width: 1700px) {
+
+    /* sec2 */
+    .sec2 {
+        padding: 60px 40px;
+    }
+
+    .sec2 .container {
+        gap: 40px;
+    }
+
+    .sec2 .image {
+        max-width: 48%;
+    }
+
+    .sec2 .content {
+        max-width: 50%;
+    }
+
+    .sec2 .content h1 {
+        font-size: 40px;
+    }
+
+    .sec2 .content p {
+        font-size: 18px;
+    }
+
+    .sec2 .content .number {
+        gap: 30px;
+    }
+
+    /* sec3 */
+    .sec3 {
+        padding: 60px 40px;
+        gap: 50px;
+    }
+
+    .sec3 .head h2 {
+        font-size: 40px;
+    }
+
+    .sec3 .menu-card {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    /* sec4 */
+    .sec4 {
+        padding: 70px 40px;
+    }
+
+    .sec4 .cards {
+        gap: 24px;
+    }
+
+    .sec4 .cards .card {
+        height: 300px;
+
+        padding: 24px;
+    }
+
+    /* sec5 */
+    .sec5 .container {
+        padding: 80px 40px;
+        gap: 30px;
+    }
+
+    /* sec6 */
+    .sec6 {
+        padding: 60px 40px;
+    }
+
+    .sec6 .head h2 {
+        font-size: 38px;
+    }
+
+    .sec6 .gallery-card {
+        height: 280px;
+    }
+}
+
+@media (max-width:1400px) {
+    .sec4 .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sec5 .container {
+        flex-direction: column;
+    }
+
+    .sec5 .left {
+        max-width: 100%;
+    }
+
+    .sec5 .right {
+        max-width: 100%;
+    }
+}
+
 @media (max-width: 992px) {
     nav {
         justify-content: space-between;
@@ -698,7 +1469,6 @@ nav .button a:hover {
         color: #f86e68;
     }
 
-
     nav .button {
         display: none;
     }
@@ -729,7 +1499,6 @@ nav .button a:hover {
         color: #ffffff;
     }
 
-
     .sec1 h1 {
         font-size: 48px;
     }
@@ -739,29 +1508,33 @@ nav .button a:hover {
         padding: 0 20px;
     }
 
+    /* sec2 */
     .sec2 {
-        padding: 50px 20px;
-        gap: 40px;
+        padding: 60px 24px;
+    }
+
+    .sec2 .container {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+        padding: 20px 0;
     }
 
     .sec2 .image {
-        width: calc(100% - 25px);
-        max-width: 100%;
-        height: 350px;
-        margin-bottom: 25px;
+        max-width: 90%;
+        width: 100%;
     }
 
     .sec2 .content {
         max-width: 100%;
         width: 100%;
-        align-items: flex-start;
-        text-align: left;
+        align-items: center;
+        text-align: center;
     }
 
     .sec2 .content h1 {
-        font-size: 34px;
+        font-size: 36px;
     }
 
     .sec2 .content h1 span {
@@ -769,31 +1542,162 @@ nav .button a:hover {
     }
 
     .sec2 .content p {
-        font-size: 17px;
+        font-size: 18px;
+    }
+
+    .sec2 .content .p {
+        padding-bottom: 30px;
+        width: 100%;
     }
 
     .sec2 .content .number {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-        width: 100%;
-        gap: 15px;
-        margin-top: 10px;
+        justify-content: center;
+        gap: 40px;
     }
 
-    .sec2 .content .number .number-card {
-        padding-top: 0;
-        flex: 1;
-        text-align: center;
+    /* sec3 */
+    .sec3 {
+        padding: 60px 24px;
+        gap: 40px;
+    }
+
+    .sec3 .head h2 {
+        font-size: 36px;
+    }
+
+    .sec3 .menu-card .card h3 {
+        font-size: 18px;
+    }
+
+    /* sec4 */
+    .sec4 {
+        padding: 60px 24px;
+        gap: 40px;
+    }
+
+    .sec4 .head h2 {
+        font-size: 32px;
+    }
+
+    .sec4 .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+
+
+    /* sec5 */
+    .sec5 .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 60px 10px   60px 10px;
+        box-sizing: border-box;
+        gap: 40px;
+        width: 100%;
+    }
+
+    .sec5 .left {
+        max-width: 100%;
+    }
+
+    .sec5 .left h2 {
+        font-size: 36px;
+    }
+
+    .sec5 .left p {
+        font-size: 18px;
+    }
+
+    /* sec6 */
+    .sec6 {
+        padding: 60px 24px;
+    }
+
+    .sec6 .head h2 {
+        font-size: 34px;
+    }
+
+    .sec6 .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .sec6 .gallery-card {
+        height: 260px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* sec2 */
+    .sec2 .content .number {
+        gap: 20px;
     }
 
     .sec2 .content .number .number-card h3 {
-        font-size: 28px;
+        font-size: 26px;
     }
 
     .sec2 .content .number .number-card p {
         font-size: 13px;
     }
+
+    /* sec3 */
+    .sec3 .head h2 {
+        font-size: 30px;
+    }
+
+    .sec3 .head p:last-child {
+        font-size: 16px;
+    }
+
+    .sec3 .head p:last-child span {
+        display: inline;
+    }
+
+    .sec3 .menu-card .card h3 {
+        font-size: 20px;
+    }
+
+    .sec3 .menu-card .card .card-info div {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    /* sec4 */
+    .sec4 .cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* sec5 */
+    .sec5 .container {
+        
+        
+    }
+    .sec5 .right form{
+        display: flex;
+        flex-direction: column;
+    }
+    .sec5 .right form .row{
+        gap:10px;
+    }
+    .sec5 .right form .column input,
+    .sec5 .right form .column textarea {
+        width: 100%;
+    }
+
+    .sec5 .right form .column select {
+        width: 100%;
+    }
+
+    .sec5 .right form p:last-child {
+        font-size: 12px;
+        text-align: center;
+    }
+
 }
 
 @media (max-width: 576px) {
@@ -844,13 +1748,9 @@ nav .button a:hover {
         font-size: 16px;
     }
 
+    /* sec2 */
     .sec2 {
         padding: 40px 16px;
-        gap: 30px;
-    }
-
-    .sec2 .image {
-        height: 250px;
     }
 
     .sec2 .image span {
@@ -868,15 +1768,76 @@ nav .button a:hover {
 
     .sec2 .content .number {
         flex-direction: row;
-        justify-content: space-between;
-        gap: 10px;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: space-around;
     }
 
-    .sec2 .content .number .number-card h3 {
-        font-size: 24px;
+    /* sec3 */
+    .sec3 {
+        padding: 40px 16px;
+        gap: 30px;
     }
 
-    .sec2 .content .number .number-card p {
+    .sec3 .head h2 {
+        font-size: 26px;
+    }
+
+    .sec3 .menu-card {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .sec3 .menu-card .card .image,
+    .sec3 .menu-card .card .image img {
+        height: 220px;
+    }
+
+    .sec3 .card-info h3 {
+        font-size: 22px;
+    }
+
+    .sec3 .card-info p {
+        font-size: 14px;
+    }
+
+    .sec3 .button a {
+        font-size: 16px;
+    }
+
+    /* sec4 */
+    .sec4 {
+        padding: 40px 16px;
+        gap: 30px;
+    }
+
+    .sec4 .head p {
+        font-size: 16px;
+    }
+
+    .sec4 .head h2 {
+        font-size: 26px;
+    }
+
+    /* sec6 */
+    .sec6 {
+        padding: 40px 16px;
+    }
+
+    .sec6 .head p {
         font-size: 12px;
+    }
+
+    .sec6 .head h2 {
+        font-size: 26px;
+    }
+
+    .sec6 .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .sec6 .gallery-card {
+        height: 240px;
     }
 }

@@ -48,3 +48,82 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+// Gallery Modal Carousel Logic for sec6
+const indexGalleryData = [
+    { src: "assets/images/Elegant dining.jpg", title: "Elegant dining room" },
+    { src: "assets/images/Pasta.jpg", title: "Fresh pasta dish" },
+    { src: "assets/images/place.jpg", title: "Italian wine & outdoor patio" },
+    { src: "assets/images/Resturant In.jpg", title: "Restaurant interior" }
+];
+
+let currentSlideIndex = 0;
+
+function openIndexModal(index) {
+    currentSlideIndex = index;
+    updateIndexSlide();
+    const modal = document.getElementById('indexGalleryModal');
+    if (modal) {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+function closeIndexModal() {
+    const modal = document.getElementById('indexGalleryModal');
+    if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+}
+
+function changeIndexSlide(step) {
+    currentSlideIndex += step;
+    if (currentSlideIndex < 0) {
+        currentSlideIndex = indexGalleryData.length - 1;
+    } else if (currentSlideIndex >= indexGalleryData.length) {
+        currentSlideIndex = 0;
+    }
+    updateIndexSlide();
+}
+
+function updateIndexSlide() {
+    const total = indexGalleryData.length;
+    const prevIdx = (currentSlideIndex - 1 + total) % total;
+    const nextIdx = (currentSlideIndex + 1) % total;
+
+    const mainImgEl = document.getElementById('indexModalImg');
+    const prevImgEl = document.getElementById('peekPrevImg');
+    const nextImgEl = document.getElementById('peekNextImg');
+    const captionEl = document.getElementById('indexModalCaption');
+
+    if (mainImgEl) {
+        mainImgEl.style.opacity = '0.3';
+        setTimeout(() => {
+            mainImgEl.src = indexGalleryData[currentSlideIndex].src;
+            mainImgEl.alt = indexGalleryData[currentSlideIndex].title;
+            if (captionEl) captionEl.innerText = indexGalleryData[currentSlideIndex].title;
+            mainImgEl.style.opacity = '1';
+        }, 120);
+    }
+
+    if (prevImgEl) {
+        prevImgEl.src = indexGalleryData[prevIdx].src;
+        prevImgEl.alt = indexGalleryData[prevIdx].title;
+    }
+
+    if (nextImgEl) {
+        nextImgEl.src = indexGalleryData[nextIdx].src;
+        nextImgEl.alt = indexGalleryData[nextIdx].title;
+    }
+}
+
+// Close modal on Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        closeIndexModal();
+    }
+});
+
+
+
