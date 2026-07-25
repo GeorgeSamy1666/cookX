@@ -248,3 +248,222 @@ main .container>div:not(:last-of-type) {
         padding: 8%!important;
     }
 }
+/* footer */
+.main-footer {
+  background-color: #1a222d;
+  color: #a0a0a5;
+  font-size: 0.9rem;
+}
+
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+}
+
+.footer-brand .brand-title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.6rem;
+  font-style: italic;
+  color: #ffffff;
+}
+
+.footer-brand .brand-icon {
+  color: #d9383a;
+  font-size: 1.1rem;
+}
+
+.footer-brand .brand-line {
+  display: inline-block;
+  width: 15px;
+  height: 1px;
+  background-color: #d9383a;
+}
+
+.main-footer .subtitle {
+  color: #8c8c91;
+  font-size: 0.88rem;
+}
+
+.contact-info .contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+  color: #a0a0a5;
+}
+
+.contact-info .contact-item i {
+  color: #d9383a;
+  margin-top: 3px;
+  font-size: 0.9rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 10px;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: #38383c;
+  color: #a0a0a5;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: #d9383a;
+  color: #ffffff;
+}
+
+.section-heading {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #a0a0a5;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+.hours-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hours-row {
+  display: flex;
+  justify-content: space-between;
+  color: #a0a0a5;
+  font-size: 0.85rem;
+}
+
+.hours-row .closed {
+  color: #d9383a;
+}
+
+.newsletter-text {
+  color: #a0a0a5;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.newsletter-form .input-group {
+  background-color: #38383c;
+  padding: 3px;
+  border-radius: 6px;
+}
+
+.newsletter-form .form-control {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 0.88rem;
+  padding-left: 12px;
+}
+
+.newsletter-form .form-control:focus {
+  box-shadow: none;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.newsletter-form .form-control::placeholder {
+  color: #6c6c72;
+}
+
+.newsletter-form .btn-subscribe {
+  background-color: #d9383a;
+  color: #ffffff;
+  border-radius: 6px !important;
+  font-weight: 500;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form .btn-subscribe:hover {
+  background-color: #b82b2d;
+  color: #ffffff;
+}
+
+.footer-divider {
+  border: none;
+  border-top: 1px solid #3d3d42;
+  margin-top: 40px;
+  margin-bottom: 0;
+  width: 100%;
+  opacity: 1;
+}
+
+.copyright-section {
+  color: #727277;
+  font-size: 0.8rem;
+}
+
+.legal-links {
+  display: flex;
+  gap: 15px;
+}
+
+.legal-links a {
+  color: #727277;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.legal-links a:hover {
+  color: #a0a0a5;
+}
+
+.newsletter-form .input-group {
+  background-color: #38383c;
+  padding: 3px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.newsletter-form .input-group:has(.form-control:focus) {
+  border-color: #d9383a;
+  box-shadow: 0 0 0 2px rgba(217, 56, 58, 0.2);
+}
+
+.newsletter-form .form-control {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 0.88rem;
+  padding-left: 12px;
+}
+
+.newsletter-form .form-control:focus {
+  box-shadow: none;
+  background-color: transparent;
+  background-color: bisque;
+  color: black;
+}
+
+.newsletter-form .form-control::placeholder {
+  color: #6c6c72;
+}
