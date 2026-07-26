@@ -1316,6 +1316,8 @@ nav .button a:hover {
     letter-spacing: 0.5px;
 }
 
+
+
 .index-footer {
     background-color: #1a222d;
     color: #a0a0a5;
@@ -1616,7 +1618,6 @@ nav .button a:hover {
     .carousel-coverflow-wrapper {
         padding: 0 20px;
         height: 70vh;
-        border: #DC2626 1px solid;
         gap: 0;
     }
 

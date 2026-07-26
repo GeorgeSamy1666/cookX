@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   overflow-x: hidden;
   background-color: var(--background);
@@ -10,6 +11,7 @@ body {
   /* font-family: "Poppins", sans-serif; */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
+
 :root {
   --primary: #ff6b63;
   --primary-light: #ff8c72;
@@ -23,35 +25,42 @@ body {
 a {
   text-decoration: none;
 }
+
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
+
 @media (min-width: 768px) {
   .container {
     max-width: 750px;
   }
 }
+
 @media (min-width: 992px) {
   .container {
     max-width: 970px;
   }
 }
+
 @media (min-width: 1200px) {
   .container {
     max-width: 1170px;
   }
 }
+
 /* start hero */
 .about-hero {
   position: relative;
@@ -110,6 +119,7 @@ html {
   font-weight: 400;
   line-height: 1.7;
 }
+
 @media (max-width: 768px) {
   .about-hero {
     min-height: 50vh;
@@ -138,6 +148,7 @@ html {
     width: 95%;
   }
 }
+
 /* end hero */
 
 
@@ -212,6 +223,7 @@ html {
   margin-bottom: 10px;
   font-family: "Outfit", sans-serif;
 }
+
 .story-content p.second-text {
   color: #9ca3af;
   font-size: 1rem;
@@ -369,7 +381,7 @@ html {
 .value-card {
   background: #1f2937;
   border-radius: 18px;
-  padding:20px 25px ;
+  padding: 20px 25px;
   text-align: center;
   transition: 0.35s;
 }
@@ -398,7 +410,7 @@ html {
   color: #fff;
   font-size: 1.2rem;
   margin-bottom: 18px;
-  font-weight:bold;
+  font-weight: bold;
   font-family: "Playfair Display", serif;
 }
 
@@ -740,12 +752,13 @@ html {
     padding: 15px 20px;
   }
 }
+
 /* end cta */
 
 
-/* footer */
+
 .main-footer {
-  background-color: #1a222d;
+  background-color: #111827;
   color: #a0a0a5;
   font-size: 0.9rem;
 }
@@ -758,7 +771,7 @@ html {
 }
 
 .footer-brand .brand-title {
-  font-family: "Playfair Display", serif;
+  font-family: "Knewave", system-ui;
   font-size: 1.6rem;
   font-style: italic;
   color: #ffffff;
@@ -767,6 +780,12 @@ html {
 .footer-brand .brand-icon {
   color: #d9383a;
   font-size: 1.1rem;
+}
+
+.footer-brand img {
+  width: 46px;
+  height: 46px;
+
 }
 
 .footer-brand .brand-line {
@@ -904,7 +923,6 @@ html {
 
 .footer-divider {
   border: none;
-  border-top: 1px solid #3d3d42;
   margin-top: 40px;
   margin-bottom: 0;
   width: 100%;
@@ -912,6 +930,7 @@ html {
 }
 
 .copyright-section {
+  border-top: 1px solid #38383c;
   color: #727277;
   font-size: 0.8rem;
 }
@@ -962,4 +981,3 @@ html {
 .newsletter-form .form-control::placeholder {
   color: #6c6c72;
 }
-
