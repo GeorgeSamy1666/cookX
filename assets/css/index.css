@@ -263,14 +263,12 @@ nav .button a:hover {
 .sec1 .scroll-botton a {
     position: absolute;
     bottom: 30px;
-    color: #a1a3a4;
-    right: 50%;
-    transform: translateX(50%);
+    color: #dc2626;
+    left: 50%;
+    transform: translateX(-50%);
     cursor: pointer;
     animation: down 1.5s infinite linear;
     transition: all 0.2s ease-in-out;
-
-
 }
 
 .sec1 .scroll-botton i {
@@ -279,15 +277,15 @@ nav .button a:hover {
 
 @keyframes down {
     0% {
-        transform: translate(0, 0);
+        transform: translate(-50%, 0);
     }
 
     50% {
-        transform: translate(0, 10px);
+        transform: translate(-50%, 10px);
     }
 
     100% {
-        transform: translate(0, 0);
+        transform: translate(-50%, 0);
     }
 }
 
