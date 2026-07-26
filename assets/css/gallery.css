@@ -52,28 +52,28 @@ body {
 
 .gallery-section {
     padding: 60px 0;
+    background-color: #111827;
 }
 
-.gallery-title {
+/* .gallery-title {
     font-family: 'Playfair Display', serif;
     font-size: 2.2rem;
     font-weight: 700;
-    color: #111111;
     margin-bottom: 8px;
-}
+} */
 
 .gallery-title,
 h2 {
     font-family: 'Cormorant Garamond', serif !important;
     font-size: 3.2rem !important;
     font-weight: 600 !important;
-    color: #111111 !important;
+    color: #fff !important;
     margin-bottom: 10px !important;
     letter-spacing: -0.5px !important
 }
 
 .gallery-subtitle {
-    color: #4b5563;
+    color: #9ca3af;
     font-size: large;
     margin-bottom: 30px;
 }
@@ -298,7 +298,7 @@ h2 {
 
 /* for instgram */
 .instagram-section {
-    background-color: #f8f9fa;
+    background-color: #030712;
 }
 
 .instagram-username {
@@ -347,7 +347,7 @@ h2 {
 /* end */
 
 .main-footer {
-    background-color: #1a222d;
+    background-color: #111827;
     color: #a0a0a5;
     font-size: 0.9rem;
 }
@@ -360,7 +360,7 @@ h2 {
 }
 
 .footer-brand .brand-title {
-    font-family: "Playfair Display", serif;
+    font-family: "Knewave", system-ui;
     font-size: 1.6rem;
     font-style: italic;
     color: #ffffff;
@@ -369,6 +369,11 @@ h2 {
 .footer-brand .brand-icon {
     color: #d9383a;
     font-size: 1.1rem;
+}
+.footer-brand  img{
+    width: 46px;
+    height: 46px;
+
 }
 
 .footer-brand .brand-line {

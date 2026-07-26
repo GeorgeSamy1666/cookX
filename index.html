@@ -7,7 +7,11 @@
     <link rel="icon" href="assets/images/chef.png">
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
@@ -372,7 +376,7 @@
                     <img src="assets/images/Elegant dining.jpg" alt="Elegant dining room">
                     <div class="overlay">
                         <div class="zoom-icon">
-                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                           <i class="fa-solid fa-down-left-and-up-right-to-center"></i>
                         </div>
                         <div class="overlay-info">
                             <h4>Elegant dining room</h4>
@@ -385,7 +389,7 @@
                     <img src="assets/images/Pasta.jpg" alt="Fresh pasta dish">
                     <div class="overlay">
                         <div class="zoom-icon">
-                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            <i class="fa-solid fa-down-left-and-up-right-to-center"></i>
                         </div>
                         <div class="overlay-info">
                             <h4>Fresh pasta dish</h4>
@@ -398,7 +402,7 @@
                     <img src="assets/images/place.jpg" alt="Italian wine & patio">
                     <div class="overlay">
                         <div class="zoom-icon">
-                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                           <i class="fa-solid fa-down-left-and-up-right-to-center"></i>
                         </div>
                         <div class="overlay-info">
                             <h4>Italian wine & patio</h4>
@@ -411,7 +415,7 @@
                     <img src="assets/images/Resturant In.jpg" alt="Restaurant interior">
                     <div class="overlay">
                         <div class="zoom-icon">
-                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            <i class="fa-solid fa-down-left-and-up-right-to-center"></i>
                         </div>
                         <div class="overlay-info">
                             <h4>Restaurant interior</h4>
@@ -423,26 +427,25 @@
         </div>
     </div>
 
-    <!-- Gallery Carousel Modal -->
+    <!-- Gallery Carousel  -->
     <div id="indexGalleryModal" class="index-gallery-modal">
         <div class="modal-backdrop-custom" onclick="closeIndexModal()"></div>
-        
-        <!-- Top right close button -->
+
+        <!--  close button -->
         <button class="modal-close-circle" onclick="closeIndexModal()" aria-label="Close">
             <i class="fa-solid fa-xmark"></i>
         </button>
 
-        <!-- Far left prev button -->
+        <!-- left prev button -->
         <button class="carousel-side-btn prev-btn" onclick="changeIndexSlide(-1)" aria-label="Previous">
             <i class="fa-solid fa-chevron-left"></i>
         </button>
 
-        <!-- Far right next button -->
+        <!-- right next button -->
         <button class="carousel-side-btn next-btn" onclick="changeIndexSlide(1)" aria-label="Next">
             <i class="fa-solid fa-chevron-right"></i>
         </button>
 
-        <!-- 3-Slide Coverflow Wrapper -->
         <div class="carousel-coverflow-wrapper">
             <!-- Left preview slide -->
             <div class="carousel-peek-card prev-card" onclick="changeIndexSlide(-1)">
@@ -463,7 +466,7 @@
     </div>
 
 
-       <!-- footer -->
+    <!-- footer -->
     <footer class="index-footer">
         <div class="footer-inner">
 
@@ -578,5 +581,3 @@
 </body>
 
 </html>
-
-    
