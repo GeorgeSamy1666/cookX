@@ -791,7 +791,8 @@ nav .button a:hover {
     border-radius: 20px;
     min-height: 270px;
 }
-.sec4 .cards .card:hover{
+
+.sec4 .cards .card:hover {
     scale: 1.02;
 }
 
@@ -1871,12 +1872,8 @@ nav .button a:hover {
 
 @media (max-width: 992px) {
 
-    .scrollbtn {
-        width: 40px;
-        height: 40px;
-        font-size: 16px;
-        right: 10px;
-        bottom: 5px;
+    .scrollbtn i {
+        padding: 15px
     }
 
     nav {
