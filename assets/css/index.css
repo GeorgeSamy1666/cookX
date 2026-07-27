@@ -17,25 +17,27 @@ body {
     right: 20px;
     color: #DC2626;
     background-color: white;
-    padding: 20px;
     border-radius: 50%;
     font-size: 30px;
     visibility: hidden;
     opacity: 0;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    animation: top 1.5s infinite linear;
     z-index: 99;
+    box-sizing: border-box;
+    animation: top 1.5s infinite linear;
+    transition: all 0.2s ease-in-out;
+    border: #DC2626 2px dashed;
+    box-shadow: #c70000 0px 0px 15px;
 }
-.scrollbtn i{
+
+.scrollbtn i {
+    text-shadow: #b91c1c 0px 0px 15px;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 26px;
-}
-.scrollbtn:hover {
-    background-color: #DC2626;
-    color: #fff;
+    font-size: 25px;
+
 }
 
 .scrollbtn.show {
@@ -44,9 +46,22 @@ body {
     transform: translateY(0);
 }
 
+.scrollbtn:hover {
+    background-color: #DC2626;
+    border: #fff 2px dashed;
+    box-shadow: #dc2626 0px 0px 15px;
+    color: #fff;
+}
+
+.scrollbtn:hover i {
+    text-shadow: #ffffff 0px 0px 15px;
+}
+
+
+
 @keyframes top {
     0% {
-        transform: translateY(0);
+        transform: translateY(5px);
     }
 
     50% {
@@ -54,7 +69,7 @@ body {
     }
 
     100% {
-        transform: translateY(0);
+        transform: translateY(5px);
     }
 }
 
@@ -774,8 +789,10 @@ nav .button a:hover {
     padding: 30px;
     box-sizing: border-box;
     border-radius: 20px;
-    min-height: 250px;
-    height: auto;
+    min-height: 270px;
+}
+.sec4 .cards .card:hover{
+    scale: 1.02;
 }
 
 .sec4 .cards .card .quote {
@@ -1135,21 +1152,21 @@ nav .button a:hover {
     right: 20px;
     align-self: flex-end;
     background-color: #ffffff;
-    color: #111111;
+    border: 2px dashed #ff0000;
     width: 38px;
     height: 38px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+    box-shadow: #ff0000 0px 0px 15px;
     opacity: 0;
     transition: all 0.3s ease;
 }
 
 .sec6 .gallery-card .zoom-icon i {
     font-size: 15px;
-    color: #111111;
+    color: #dc2626;
 }
 
 .sec6 .gallery-card .overlay-info {
@@ -1186,7 +1203,7 @@ nav .button a:hover {
 }
 
 .sec6 .gallery-card:hover .overlay {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.00000009), rgba(0, 0, 0, 0.00000009), rgba(0, 0, 0, 0.000000000009));
+    background: linear-gradient(to top, rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0), rgba(255, 0, 0, 0), rgba(255, 0, 0, 0));
 }
 
 .sec6 .gallery-card:hover .overlay .overlay-info {
@@ -1198,8 +1215,8 @@ nav .button a:hover {
     opacity: 1;
 }
 
-.sec6 .gallery-card:hover .zoom-icon {
-    transform: scale(1.08);
+.sec6 .gallery-card .zoom-icon:hover {
+    transform: scale(1.1);
 }
 
 /* sec6 end */
@@ -1855,10 +1872,13 @@ nav .button a:hover {
 @media (max-width: 992px) {
 
     .scrollbtn {
-        padding: 15px;
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
         right: 10px;
         bottom: 5px;
     }
+
     nav {
         justify-content: space-between;
         padding: 1rem 1.5rem;
