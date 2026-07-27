@@ -49,6 +49,24 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+
+const scrollBtn = document.getElementById('scroll-top');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        scrollBtn.classList.add('show');
+    } else {
+        scrollBtn.classList.remove('show'); 
+    }
+});
+scrollBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+    });
+});
+
+
+
 // Gallery Modal Carousel Logic for sec6
 const indexGalleryData = [
     { src: "assets/images/Elegant dining.jpg", title: "Elegant dining room" },

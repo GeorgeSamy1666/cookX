@@ -11,6 +11,53 @@ body {
     margin-top: 80px;
 }
 
+.scrollbtn {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    color: #DC2626;
+    background-color: white;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 30px;
+    visibility: hidden;
+    opacity: 0;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    animation: top 1.5s infinite linear;
+    z-index: 99;
+}
+.scrollbtn i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+}
+.scrollbtn:hover {
+    background-color: #DC2626;
+    color: #fff;
+}
+
+.scrollbtn.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+@keyframes top {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
 nav {
     position: fixed;
     top: 0;
@@ -937,8 +984,9 @@ nav .button a:hover {
     max-width: 100%;
     border: 1px solid #4b5563;
 }
+
 .sec5 .right form .column input:focus,
-.sec5 .right form .column textarea:focus{
+.sec5 .right form .column textarea:focus {
     outline: none;
     border: 1px solid #dc2626;
 }
@@ -1136,8 +1184,9 @@ nav .button a:hover {
     font-size: 12px;
     font-weight: 300;
 }
-.sec6 .gallery-card:hover .overlay{
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.00000009) , rgba(0, 0, 0, 0.00000009),rgba(0, 0, 0, 0.000000000009)); 
+
+.sec6 .gallery-card:hover .overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.00000009), rgba(0, 0, 0, 0.00000009), rgba(0, 0, 0, 0.000000000009));
 }
 
 .sec6 .gallery-card:hover .overlay .overlay-info {
@@ -1599,7 +1648,7 @@ nav .button a:hover {
 
     .carousel-side-btn.prev-btn {
         left: 16px;
-        
+
     }
 
     .carousel-side-btn.next-btn {
@@ -1608,6 +1657,7 @@ nav .button a:hover {
 }
 
 @media (max-width: 768px) {
+
     /* Hide peek cards on tablet/mobile – show only the main image */
     .carousel-peek-card {
         display: none;
@@ -1696,6 +1746,7 @@ nav .button a:hover {
         font-size: 13px;
     }
 }
+
 /* ── End Carousel Responsive ── */
 
 
@@ -1802,6 +1853,12 @@ nav .button a:hover {
 }
 
 @media (max-width: 992px) {
+
+    .scrollbtn {
+        padding: 15px;
+        right: 10px;
+        bottom: 5px;
+    }
     nav {
         justify-content: space-between;
         padding: 1rem 1.5rem;
@@ -2081,6 +2138,7 @@ nav .button a:hover {
         justify-content: center;
         align-items: center
     }
+
     .sec5 .right form {
         display: flex;
         flex-direction: column;
@@ -2225,10 +2283,12 @@ nav .button a:hover {
     .sec4 .head h2 {
         font-size: 26px;
     }
+
     /* sec5 */
-    .sec5 .right form .row{
+    .sec5 .right form .row {
         flex-direction: column;
     }
+
     /* sec6 */
     .sec6 {
         padding: 40px 16px;
