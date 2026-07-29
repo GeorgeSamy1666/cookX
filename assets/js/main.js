@@ -87,7 +87,7 @@ if (form) {
         let phoneInput = document.getElementById("phone");
         let timeInput = document.getElementById("time");
         let dateInput = document.getElementById("date");
-        
+
 
 
         let isNameValid = regexPatterns.name.test(nameInput.value.trim());
@@ -113,7 +113,7 @@ if (form) {
             return;
         }
 
-        if (!dateInput.value  || !timeInput.value  || selectedDateTime < now) {
+        if (!dateInput.value || !timeInput.value || selectedDateTime < now) {
             p.classList.add("error");
             p.textContent = "Please select a future date and time for the reservation.";
             if (!dateInput.value || selectedDateTime < now) {
@@ -130,17 +130,53 @@ if (form) {
             phoneInput.focus();
             return;
         }
-        
+
         p.classList.remove("error");
         p.classList.add("reserved");
         p.textContent = "Thank you for your reservation request! We will confirm via email within 2 hours."
-     
+
 
         form.reset();
     });
 }
 
+// count
 
+let x = document.getElementById("count40");
+let i = 0;
+let timer = setInterval(function () {
+    x.innerHTML = i;
+
+    if (i === 50) {
+        clearInterval(timer);
+    } else {
+        i++;
+    }
+}, 50);
+
+let y = document.getElementById("count50");
+let j = 0;
+let timer2 = setInterval(function () {
+    y.innerHTML = j;
+
+    if (j === 100) {
+        clearInterval(timer2);
+    } else {
+        j++;
+    }
+}, 25);
+
+let z = document.getElementById("count5");
+let k = 0;
+let timer3 = setInterval(function () {
+    z.innerHTML = k.toFixed(1);
+
+    if (k >= 4.8) {
+        clearInterval(timer3);
+    } else {
+        k+=0.1;
+    }
+}, 50);
 
 
 
