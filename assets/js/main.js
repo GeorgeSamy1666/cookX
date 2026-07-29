@@ -56,7 +56,7 @@ window.addEventListener('scroll', () => {
     if (window.scrollY > 300) {
         scrollBtn.classList.add('show');
     } else {
-        scrollBtn.classList.remove('show'); 
+        scrollBtn.classList.remove('show');
     }
 });
 scrollBtn.addEventListener('click', () => {
@@ -64,6 +64,83 @@ scrollBtn.addEventListener('click', () => {
         top: 0,
     });
 });
+
+// form
+let form = document.getElementById("reservation-form");
+let p = document.querySelector(".confirm");
+
+const regexPatterns = {
+
+    name: /^[\u0600-\u06FFa-zA-Z\s]{3,}$/,
+
+    email: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+
+    phone: /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/
+};
+
+if (form) {
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        let nameInput = document.getElementById("name");
+        let emailInput = document.getElementById("email");
+        let phoneInput = document.getElementById("phone");
+        let timeInput = document.getElementById("time");
+        let dateInput = document.getElementById("date");
+        
+
+
+        let isNameValid = regexPatterns.name.test(nameInput.value.trim());
+        let isEmailValid = regexPatterns.email.test(emailInput.value.trim());
+        let isPhoneValid = regexPatterns.phone.test(phoneInput.value.trim());
+
+        let now = new Date();
+        let selectedDateTime = new Date(`${dateInput.value} ${timeInput.value}`);
+
+        p.classList.remove("reserved", "error");
+
+        if (!isNameValid) {
+            p.classList.add("error");
+            p.textContent = "Please enter a valid name (at least 3 characters).";
+            nameInput.focus();
+            return;
+        }
+
+        if (!isEmailValid) {
+            p.classList.add("error");
+            p.textContent = "Please enter a valid email address.";
+            emailInput.focus();
+            return;
+        }
+
+        if (!dateInput.value  || !timeInput.value  || selectedDateTime < now) {
+            p.classList.add("error");
+            p.textContent = "Please select a future date and time for the reservation.";
+            if (!dateInput.value || selectedDateTime < now) {
+                dateInput.focus();
+            } else {
+                timeInput.focus();
+            }
+            return;
+        }
+
+        if (!isPhoneValid) {
+            p.classList.add("error");
+            p.textContent = "Please enter a valid phone number.";
+            phoneInput.focus();
+            return;
+        }
+        
+        p.classList.remove("error");
+        p.classList.add("reserved");
+        p.textContent = "Thank you for your reservation request! We will confirm via email within 2 hours."
+     
+
+        form.reset();
+    });
+}
+
+
 
 
 

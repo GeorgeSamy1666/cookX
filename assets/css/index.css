@@ -26,8 +26,8 @@ body {
     box-sizing: border-box;
     animation: top 1.5s infinite linear;
     transition: all 0.2s ease-in-out;
-    border: #DC2626 2px dashed;
-    box-shadow: #c70000 0px 0px 15px;
+    border: #DC2626 5px dashed;
+    box-shadow: #c70000 0px 0px 10px;
 }
 
 .scrollbtn i {
@@ -48,8 +48,8 @@ body {
 
 .scrollbtn:hover {
     background-color: #DC2626;
-    border: #fff 2px dashed;
-    box-shadow: #dc2626 0px 0px 15px;
+    border: #fff 5px dashed;
+    box-shadow: #dc26268e 0px 10px 10px;
     color: #fff;
 }
 
@@ -122,7 +122,7 @@ nav .logo {
 }
 
 nav .logo span {
-    color: #f86e68;
+    color: #fd6e6e;
     font-size: 40px;
     font-weight: 300;
     display: inline-block;
@@ -152,20 +152,21 @@ nav .logo span {
     }
 }
 
-nav .logo-icon {
+nav .logo-icon  {
     position: relative;
     width: 50px;
     height: 50px;
     display: flex;
+    color: #fff;
     align-items: center;
     justify-content: center;
-    background-color: rgba(248, 114, 114, 0.2);
+    background-color: #fd6e6e;
     padding: 10px;
     border-radius: 10px;
-
+    font-size: 30px;
 }
 
-nav .logo-icon img {
+nav .logo-icon i {
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -849,6 +850,7 @@ nav .button a:hover {
 
 /* sec4 end */
 /* sec5 start */
+
 
 .sec5 {
     width: 100%;
@@ -2364,4 +2366,14 @@ nav .button a:hover {
     .index-footer {
         padding: 40px 0 0 0;
     }
+}
+
+.confirm.error {
+    color: #c70000 !important;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.confirm.reserved {
+    color: #ffb900 !important;
 }

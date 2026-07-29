@@ -39,13 +39,13 @@
 <body>
 
     <div class="scrollbtn" id="scroll-top">
-         <i class="fa-solid fa-arrow-up"></i>
+      <i class="fa-solid fa-angles-up"></i>
     </div>
     <nav>
         <div class="nav-bar">
             <a class="logo-link" href="index.html">
                 <div class="logo-icon">
-                    <img src="assets/images/chef.png" alt="logo-icon">
+                    <i class="fa-solid fa-cookie-bite"></i>
                 </div>
                 <span class="logo">
                     Cook <span>X</span>
@@ -87,7 +87,7 @@
         </div>
 
         <div class="scroll-botton">
-            <a href="#sec2"><i class="fa-solid fa-angle-down"></i></a>
+            <a href="#sec2"><i class="fa-solid fa-angles-down"></i></a>
 
         </div>
     </div>
@@ -309,27 +309,27 @@
                 </div>
             </div>
             <div class="right">
-                <form id="reservation-form" action="" method="post">
+                <form id="reservation-form" action="" method="post" novalidate>
                     <div class="row">
                         <div class="column">
                             <label for="name">Name</label>
-                            <input type="text" id="name" name="name" placeholder="Your Name">
+                            <input type="text" id="name" name="name" placeholder="Your Name" >
                         </div>
 
                         <div class="column">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="Your@email.com">
+                            <input type="email" id="email" name="email" placeholder="Your@email.com" >
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="column">
                             <label for="date">Date</label>
-                            <input type="date" name="date" id="date">
+                            <input type="date" name="date" id="date" required>
                         </div>
                         <div class="column">
                             <label for="time">Time</label>
-                            <input type="time" name="time" id="time">
+                            <input type="time" name="time" id="time" required>
                         </div>
 
                     </div>
@@ -338,8 +338,8 @@
 
                         <div class="column">
                             <label for="guest">Number of Guests</label>
-                            <select name="Guest" name="guest" id="guest">
-                                <option value="1">Geust 1</option>
+                            <select name="Guest" name="guest" id="guest" required>
+                                <option value="1">Guest 1</option>
                                 <option value="2">Guest 2</option>
                                 <option value="3">Guest 3</option>
                                 <option value="4">Guest 4</option>
@@ -350,7 +350,7 @@
                         </div>
                         <div class="column">
                             <label for="phone">Phone</label>
-                            <input type="tel" id="phone" placeholder="(555) 123-4567">
+                            <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" >
                         </div>
                     </div>
 
@@ -361,7 +361,7 @@
                             placeholder="Dietary restrictions, celebrations, seating preferences..."></textarea>
                     </div>
                     <button type="submit">Request Reservation</button>
-                    <p>We'll confirm your reservation via email within 2 hours.</p>
+                    <p class="confirm ">We'll confirm your reservation via email within 2 hours.</p>
 
                 </form>
             </div>
@@ -380,7 +380,7 @@
                     <img src="assets/images/Elegant dining.jpg" alt="Elegant dining room">
                     <div class="overlay">
                         <div class="zoom-icon">
-                           <i class="fa-solid fa-down-left-and-up-right-to-center"></i>
+                            <i class="fa-solid fa-down-left-and-up-right-to-center"></i>
                         </div>
                         <div class="overlay-info">
                             <h4>Elegant dining room</h4>
@@ -406,7 +406,7 @@
                     <img src="assets/images/place.jpg" alt="Italian wine & patio">
                     <div class="overlay">
                         <div class="zoom-icon">
-                           <i class="fa-solid fa-down-left-and-up-right-to-center"></i>
+                            <i class="fa-solid fa-down-left-and-up-right-to-center"></i>
                         </div>
                         <div class="overlay-info">
                             <h4>Italian wine & patio</h4>
