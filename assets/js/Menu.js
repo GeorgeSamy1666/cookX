@@ -11,7 +11,7 @@ prices.forEach(price => {
         if (start >= end) {
             clearInterval(counter);
         }
-    }, 40);
+    }, 110);
 });
 
 AOS.init({
