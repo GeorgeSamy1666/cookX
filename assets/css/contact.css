@@ -37,7 +37,7 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  
 }
 
 .intro span,
@@ -240,8 +240,12 @@ h3 {
   gap: 0.5rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   white-space: nowrap;
+  transition: all 0.3s ease;
 }
-
+.map-btn:hover {
+  background-color: #f87171;
+  color: #fff;
+}
 .map-btn i {
   color: #0b0f17;
 }
