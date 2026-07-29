@@ -325,6 +325,11 @@ h3 {
 .tracking-wider {
   letter-spacing: 1.5px;
 }
+.form-control.error-input,
+.form-select.error-input,
+textarea.error-input {
+  border: 2px solid red;
+}
 
 /************SECTION 4:occasions********************/
 
