@@ -16,7 +16,7 @@ body {
     bottom: 30px;
     right: 20px;
     color: #DC2626;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 50%;
     font-size: 30px;
     visibility: hidden;
@@ -26,18 +26,25 @@ body {
     box-sizing: border-box;
     animation: top 1.5s infinite linear;
     transition: all 0.2s ease-in-out;
-    border: #DC2626 5px dashed;
-    box-shadow: #c70000 0px 0px 10px;
+}
+
+.scrollbtn::before {
+    content: "";
+    inset: 0;
+    position: absolute;
+    border-radius: 50%;
+    border: 5px dashed #DC2626;
+    animation: rotate 4s infinite linear;
+    transition: all 0.2s ease-in-out;
+   
 }
 
 .scrollbtn i {
-    text-shadow: #b91c1c 0px 0px 15px;
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 25px;
-
 }
 
 .scrollbtn.show {
@@ -48,11 +55,11 @@ body {
 
 .scrollbtn:hover {
     background-color: #DC2626;
-    border: #fff 5px dashed;
-    box-shadow: #dc26268e 0px 10px 10px;
-    color: #fff;
+    color: #fff; 
 }
-
+.scrollbtn:hover::before {
+    border-color: #ffffff;
+}
 .scrollbtn:hover i {
     text-shadow: #ffffff 0px 0px 15px;
 }
@@ -152,7 +159,7 @@ nav .logo span {
     }
 }
 
-nav .logo-icon  {
+nav .logo-icon {
     position: relative;
     width: 50px;
     height: 50px;
@@ -860,6 +867,16 @@ nav .button a:hover {
     background:
         linear-gradient(90deg, #111827, #111827, rgba(17, 24, 39, 0.913)),
         url("../images/form-bg.jpeg") no-repeat center center / cover;
+}
+
+.confirm.error {
+    color: #c70000 !important;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.confirm.reserved {
+    color: #ffb900 !important;
 }
 
 .sec5 .container {
@@ -2366,14 +2383,4 @@ nav .button a:hover {
     .index-footer {
         padding: 40px 0 0 0;
     }
-}
-
-.confirm.error {
-    color: #c70000 !important;
-    font-weight: 600;
-    font-size: 16px;
-}
-
-.confirm.reserved {
-    color: #ffb900 !important;
 }
