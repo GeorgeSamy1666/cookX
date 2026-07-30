@@ -2,6 +2,7 @@ AOS.init({
   duration: 1000,
   once: true,
 });
+
 const form = document.getElementById("reservationForm");
 
 const nameInput = document.getElementById("name");

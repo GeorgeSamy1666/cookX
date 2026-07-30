@@ -80,7 +80,7 @@ const regexPatterns = {
 
 if (form) {
     form.addEventListener("submit", function (e) {
-        e.preventDefault();
+        e.preventDefault(); //no reload
 
         let nameInput = document.getElementById("name");
         let emailInput = document.getElementById("email");
