@@ -231,30 +231,34 @@
         <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
 
           <div class="card reservation-card rounded-4 p-4 p-md-5 shadow-lg border-0">
-            <form id="reservationForm" name="reservationForm">
+            <form id="reservationForm" name="reservationForm" novalidate >
               <div class="row g-3">
                 <!-- Name -->
                 <div class="col-md-6">
                   <label for="name" class="form-label text-secondary small fw-medium">Name</label>
                   <input  id="name" type="text" name="name" class="form-control rounded-3 py-2" placeholder="Your name" required />
+                  <small class="text-danger error"></small>
                 </div>
 
                 <!-- Email -->
                 <div class="col-md-6">
                   <label for="email" class="form-label text-white-50 small fw-medium">Email</label>
                   <input id="email" type="email" name="email" class="form-control rounded-3 py-2" placeholder="your@email.com" required />
+                  <small class="text-danger error"></small>
                 </div>
 
                 <!-- Date -->
                 <div class="col-md-6">
                   <label for="date" class="form-label text-white-50 small fw-medium">Date</label>
-                  <input id="date" type="date" name="date" class="form-control rounded-3 py-2" required />
+                  <input id="date" type="date" name="date"  class="form-control rounded-3 py-2" required />
+                  <small class="text-danger error"></small>
                 </div>
 
                 <!-- Time -->
                 <div class="col-md-6">
-                  <label for="time"  class="form-label text-white-50 small fw-medium">Time</label>
-                  <select id="time" name="time" class="form-select rounded-3 py-2" required>
+                  <label for="time" class="form-label text-white-50 small fw-medium">Time</label>
+                  <select id="time" name="time"  class="form-select rounded-3 py-2" required>
+                    
                     <option value="" selected disabled>Select time</option>
                     <option>5:00 PM</option>
                     <option>5:30 PM</option>
@@ -265,12 +269,15 @@
                     <option>8:00 PM</option>
                     <option>8:30 PM</option>
                   </select>
+                  <small class="text-danger error"></small>
                 </div>
 
                 <!-- Number of Guests -->
                 <div class="col-md-6">
-                  <label for="guests"  class="form-label text-white-50 small fw-medium">Number of Guests</label>
+                  <label for="guests" class="form-label text-white-50 small fw-medium">Number of Guests</label>
+                  
                   <select id="guests" name="guests" class="form-select rounded-3 py-2" required>
+                    
                     <option value="" selected disabled>Select guests</option>
                     <option>1 Guest</option>
                     <option>2 Guests</option>
@@ -280,19 +287,22 @@
                     <option>6 Guests</option>
                     <option>7+ Guests</option>
                   </select>
+                  <small class="text-danger error"></small>
                 </div>
 
                 <!-- Phone -->
                 <div class="col-md-6">
                   <label for="phone" class="form-label text-secondary small fw-medium">Phone</label>
-                  <input  id="phone" type="tel" name="phone"  class="form-control rounded-3 py-2" placeholder="(555) 123-4567" required />
+                  <input id="phone" type="tel" name="phone" class="form-control rounded-3 py-2" placeholder="(555) 123-4567" required />
+                  <small class="text-danger error"></small>
                 </div>
 
                 <!-- Special Requests -->
                 <div class="col-12">
                   <label for="requests" class="form-label text-white-50 small fw-medium">Special Requests</label>
-                  <textarea id="requests" name="requests" class="form-control rounded-3" rows="3"
+                  <textarea id="requests" name="requests"  class="form-control rounded-3" rows="3"
                     placeholder="Dietary restrictions, celebrations, seating preferences..."></textarea>
+                    <small class="text-danger error"></small>
                 </div>
 
                 <!-- Submit Button -->
