@@ -1170,7 +1170,6 @@ nav .button a:hover {
     position: absolute;
     top: 20px;
     right: 20px;
-    align-self: flex-end;
     background-color: #ffffff;
     border: 2px dashed #ff0000;
     width: 38px;
@@ -1198,7 +1197,6 @@ nav .button a:hover {
     position: absolute;
     bottom: -100px;
     left: 20px;
-    align-self: flex-end;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1235,9 +1233,6 @@ nav .button a:hover {
     opacity: 1;
 }
 
-.sec6 .gallery-card .zoom-icon:hover {
-    transform: scale(1.1);
-}
 
 /* sec6 end */
 
