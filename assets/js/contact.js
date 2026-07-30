@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
  
   if (!form) {
-    console.error("عنصر reservationForm غير موجود في الصفحة!");
+    console.error("Reservation form not found.");
     return;
   }
 
