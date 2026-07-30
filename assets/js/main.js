@@ -139,45 +139,41 @@ if (form) {
         form.reset();
     });
 }
-
-// count
-
 let x = document.getElementById("count40");
-let i = 0;
+let count40 = 0;
 let timer = setInterval(function () {
-    x.innerHTML = i;
+    if (x) x.innerHTML = count40;
 
-    if (i === 50) {
+    if (count40 === 50) {
         clearInterval(timer);
     } else {
-        i++;
+        count40++;
     }
 }, 50);
 
 let y = document.getElementById("count50");
-let j = 0;
+let count50 = 0;
 let timer2 = setInterval(function () {
-    y.innerHTML = j;
+    if (y) y.innerHTML = count50;
 
-    if (j === 100) {
+    if (count50 === 100) {
         clearInterval(timer2);
     } else {
-        j++;
+        count50++;
     }
 }, 25);
 
 let z = document.getElementById("count5");
-let k = 0;
+let count5 = 0;
 let timer3 = setInterval(function () {
-    z.innerHTML = k.toFixed(1);
+    if (z) z.innerHTML = count5.toFixed(1);
 
-    if (k >= 4.8) {
+    if (count5 >= 4.8) {
         clearInterval(timer3);
     } else {
-        k+=0.1;
+        count5 += 0.1;
     }
 }, 50);
-
 
 
 // Gallery Modal Carousel Logic for sec6
